@@ -1,0 +1,193 @@
+body {
+    overflow-x: hidden;
+}
+/* start header */
+.end-header{
+    background: rgb(238, 224, 208);
+}
+.end-header .nav-link {
+    color: #000;
+    transition: 0.3s ease;
+}
+.end-header .nav-link:hover,
+.end-header .nav-link:active,
+.end-header .nav-link:focus{
+    color: green;
+}
+#header img {
+    width: 30px;
+    height: 30px;
+}
+.sotial-media i img,
+.icons i img{
+    cursor: pointer;
+    margin-right: 12px;
+    transition: 0.5s ease;
+}
+.sotial-media i img:hover{
+    background-color: rgba(238,224,208);
+    border-radius: 50px;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .navbar-toggler{
+    border: 1px solid #000;
+}
+
+/* end header */
+/* main start */
+
+/* home start */
+#home {
+    background: url(image/background.png) center /cover no-repeat;
+    min-height: 90vh;
+    width: 100%;
+    overflow: hidden;
+}
+#home .information {
+    margin-top: 13rem;
+}
+#home .information h3 {
+    font-size: 50px;
+    font-weight: 600;
+    width: 35%;
+}
+#home .information .btn {
+    border: solid 1px #000;
+    border-radius: 0;
+    padding: .3rem 2.5rem;
+    font-weight: 600;
+}
+#home .information .btn:hover{
+    background-color: green;
+    color:rgba(238,224,208);
+    transition: 0.3s ease;
+}
+/* home end */
+
+/* offers */
+#offers {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+#offer .container {
+    margin: 3rem 80px; padding: 0 5rem 7rem; 
+}
+/* main start */
+/* shop start */
+
+#shop .row .col {
+    padding: 3rem;
+}
+.card button,
+#about button{
+    padding: 0 .7rem;
+    background-color: transparent;
+    border: 1px solid #000;
+    transition: .3s ease;
+}
+.card .card-text {
+    padding: 0 1rem;
+}
+.card button:hover,
+#about button:hover {
+    background-color:rgba(238,224,208) ;
+}
+
+
+.umber2 .card{
+    box-shadow: black 0px 0px 5px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.umber2 .card:hover {
+    box-shadow: 0px -1px 2px 2px rgb(122, 125, 126);
+    transform: translate(0, -12px);
+}
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(220, 170, 113);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+#backToTop:hover{
+    background-color: green;
+    color: #fff;
+}
+/* card3 End */
+/* main end */
+@media(max-width: 990px){
+    .end-header{
+        padding: .5rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    #services .row,
+    #offers .container {
+        padding: 0 1rem !important;
+    }
+}
+@media (max-width: 770px) {
+    #home .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #home .information {
+        margin-top: 5rem !important;
+    }
+    #home .information h3 {
+        width: 80%;
+        font-size: 35px;
+    }
+    #home .information p {
+        padding-bottom: 1rem;
+    }    
+    #about .row{
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width: 480px){
+    html{
+        font-size: small;
+    }
+    #header img{
+        width: 15px;
+        height: 15px;
+        margin: 0 2px;
+    }
+    #home .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    #home .information h3 {
+        width: 100%;
+        margin-top: 1rem;
+        font-size: 20px;
+    }
+    #offers .row{
+        margin: 0 !important;
+    }
+    #footer {
+        font-size: x-small;
+    }
+}
